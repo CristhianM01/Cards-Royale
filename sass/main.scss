@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Before-Header {
+    position: absolute;
+}
+
+.Before-Header::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imgHeader {
+    position: relative;
+    z-index: -3;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.carousel {
+    width: 420px;
+}
+
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-control-next a {
+    span.sr-only {
+        padding-top: 50px !important;
+    }
+}
+
+.carousel-item {
+    padding: 50px 0;
+}
+
+.cards {
+    left: 19%;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    width: 270px;
+    height: 430px;
+    box-shadow: 0px 0px 30px #3b3a3a;
+
+    .Logo {
+        position: absolute;
+        width: 55px;
+        height: 50px;
+        left: -20px;
+        bottom: 160px;
+    }
+
+    .imgFond {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    }
+
+    /* ----TAMAÑO IMAGENES----- */
+    img {
+        position: absolute;
+    }
+
+    .img1 {
+        width: 210px;
+        height: 260px;
+        top: -30px;
+        z-index: 2;
+        left: 20px;
+    }
+
+    .img2 {
+        width: 400px;
+        height: 240px;
+        top: -35px;
+        left: -45px;
+        z-index: 2;
+    }
+
+    .img3 {
+        width: 340px;
+        height: 300px;
+        top: -60px;
+        left: -15px;
+        z-index: 2;
+    }
+
+    .img4 {
+        width: 340px;
+        height: 300px;
+        top: -50px;
+        left: -40px;
+        z-index: 2;
+    }
+
+    /* ----TAMAÑO IMAGENES----- */
+}
+
+.CardInfo {
+    text-align: center;
+    padding-top: 30px;
+    padding: 35px 15px 0 15px;
+
+    h4 {
+        font-weight: bold;
+        padding-bottom: 8px;
+    }
+
+    p {
+        font-size: 12px;
+        color: rgb(115, 121, 115);
+    }
+
+    .EstadisticaFlex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+
+        .Estadistica {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 3px 0;
+
+
+            p {
+                margin: 0;
+                font-weight: 500;
+                color: white;
+
+                span {
+                    font-size: 17px;
+                }
+            }
+
+            p:nth-of-type(2) {
+                font-size: 10px;
+                font-weight: 300;
+            }
+        }
+
+        .Estadistica:nth-of-type(1) {
+            border-bottom-left-radius: 8px;
+            border-left: none;
+        }
+
+        .Estadistica:nth-of-type(3) {
+            border-bottom-right-radius: 8px;
+        }
+
+        /* /////COLOR ESTADISTICA */
+        .EstColor1 {
+            background-color: rgb(128, 23, 110);
+            border-left: 1px solid rgb(97, 11, 80);
+        }
+
+        .EstColor2 {
+            background-color: rgb(30, 116, 208);
+            border-left: 1px solid rgb(54, 50, 133);
+        }
+
+        .EstColor4 {
+            background-color: rgb(30, 175, 208);
+            border-left: 1px solid rgb(69, 128, 184);
+        }
+    }
+}
